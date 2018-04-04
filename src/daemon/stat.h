@@ -29,10 +29,9 @@ void set_stat_name(t_variable_stat* my_var, char* name_var);
  *\ brief get a value of a stat variable
  *\ The function will return the value of stat variable
 */
-__attribute__((const)) const char* get_stat(t_variable_stat my_var);
+__attribute__((const)) const int get_stat(t_variable_stat my_var);
 
 
 /**
  *\Init stat variables
 */
-t_variable_stat* USB_COUNT;
