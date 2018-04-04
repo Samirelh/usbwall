@@ -17,7 +17,7 @@ typedef struct variable_stat {
  *\ brief set a value to a stat variable
  *\ The function will allow the necessare memory of the value to set
 */
-void set_stat_value(t_variable_stat* my_var, const char* value_name);
+void set_stat_value(t_variable_stat* my_var, const int value);
 
 /**
  *\ brief set a name to a stat variable
