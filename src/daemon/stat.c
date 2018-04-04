@@ -12,9 +12,8 @@
  *\ The function will allow the necessare memory of the value to set
 */
 
-void set_stat_value(t_variable_stat* my_var, const char* value_name){
-	my_var->value=malloc(sizeof(value_name));	
-	my_var->value=value_name;
+void set_stat_value(t_variable_stat* my_var, const int value){	
+	my_var->value=value;
 }
 
 /**
@@ -30,6 +29,6 @@ void set_stat_name(t_variable_stat* my_var, char* name_var){
  *\ brief get a value of a stat variable
  *\ The function will return the value of stat variable
 */
-__attribute__((const)) const char* get_stat(t_variable_stat my_var){
+__attribute__((const)) const int get_stat(t_variable_stat my_var){
 	return my_var.value;
 }
